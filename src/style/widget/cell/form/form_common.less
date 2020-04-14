@@ -1,0 +1,120 @@
+/*
+* Tencent is pleased to support the open source community by making WeUI available.
+* 
+* Copyright (C) 2017 THL A29 Limited, a Tencent company. All rights reserved.
+* 
+* Licensed under the MIT License (the "License"); you may not use this file except in compliance
+* with the License. You may obtain a copy of the License at
+* 
+*       http://opensource.org/licenses/MIT
+* 
+* Unless required by applicable law or agreed to in writing, software distributed under the License is
+* distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+* either express or implied. See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+@import "../../../base/fn";
+
+.label {
+    display: block;
+    width: @CellLabelWidth;
+    .text_wrap();
+}
+.input {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    -webkit-appearance: none;
+    background-color: transparent;
+    font-size: inherit;
+    color: inherit;
+    height: unit(@CellLineHeight, em);
+    line-height: @CellLineHeight;
+
+    // hides the spin-button
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    &:focus {
+        &:not(:placeholder-shown) {
+            & + .btn_input-clear {
+                display: inline;
+            }
+        }
+    }
+}
+.input::placeholder,
+.input__placeholder {
+    color: var(FG-2);
+}
+
+.textarea {
+    display: block;
+    border: 0;
+    resize: none;
+    background: transparent;
+    width: 100%;
+    color: inherit;
+    font-size: 1em;
+    line-height: inherit;
+    outline: 0;
+}
+
+.textarea-counter {
+    color: @TextColorTips;
+    text-align: right;
+    font-size: 14px;
+    .cell_warn & {
+        color: @TextColorWarn;
+    }
+}
+
+.cells_form {
+    .cell_switch,
+    .cell_vcode,
+    .cell_readonly,
+    .cell_disabled {
+        &:active {
+            background-color: transparent;
+        }
+    }
+    .cell__ft {
+        font-size: 0;
+    }
+    .icon-warn {
+        display: none;
+    }
+    input,
+    textarea,
+    label[for] {
+        .setTapColor();
+    }
+}
+.cell_warn {
+    color: @TextColorWarn;
+    .icon-warn { display: inline-block; }
+}
+.cell_readonly,
+.cell_disabled {
+    .input,
+    .textarea {
+        &:disabled {
+            opacity: 1;
+            -webkit-text-fill-color: @TextColorDesc;
+        }
+        &[disabled],
+        &[readonly] {
+            color: @TextColorDesc;
+        }
+    }
+}
+.btn_input-clear {
+    display: none;
+    padding-left: 8px;
+    [class*="icon-"] {
+        width: 18px;
+    }
+}

@@ -2,7 +2,7 @@
 @import 'vars/dark';
 
 .dark(@rule) {
-    [data-weui-theme='dark'] & {
+    [data-theme='dark'] & {
         @rule();
     }
 }
@@ -20,10 +20,10 @@
 }
 ._setColor(@lightRule, @darkRule) {
     page,
-    [data-weui-theme='light'] {
+    [data-theme='light'] {
         @lightRule();
     }
-    [data-weui-theme='dark'] {
+    [data-theme='dark'] {
         @darkRule();
     }
 }
