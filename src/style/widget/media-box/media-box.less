@@ -20,7 +20,7 @@
     padding: 16px;
     position: relative;
     &:before {
-        .setTopLine(@LineColorLight);
+        .setTopLine(@weuiLineColorLight);
 
         left: 16px;
     }
@@ -34,7 +34,7 @@
         color: #000;
         .setTapColor();
         &:active {
-            background-color: @BgColorActive;
+            background-color: @weuiBgColorActive;
         }
     }
 }
@@ -42,14 +42,14 @@
     font-weight: 400;
     font-size: 17px;
     line-height: 1.4;
-    color: @TextColorTitle;
+    color: @weuiTextColorTitle;
     .ellipsis();
 
     word-wrap: break-word;
     word-break: break-all;
 }
 .media-box__desc {
-    color: @TextColorTips;
+    color: @weuiTextColorTips;
     font-size: 14px;
     line-height: 1.4;
     padding-top: 4px;
@@ -59,7 +59,7 @@
     margin-top: 16px;
     padding-bottom: 4px;
     font-size: 13px;
-    color: @TextColorTips;
+    color: @weuiTextColorTips;
     line-height: 1em;
     list-style: none;
     overflow: hidden;
@@ -70,7 +70,7 @@
 }
 .media-box__info__meta_extra {
     padding-left: 1em;
-    border-left: 1px solid @TextColorTips;
+    border-left: 1px solid @weuiTextColorTips;
 }
 .media-box_appmsg {
     display: flex;

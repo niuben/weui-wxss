@@ -16,45 +16,45 @@
 
 @import "../../base/fn";
 
-.setColor(BTN-DISABLED-FONT-COLOR, rgba(0, 0, 0, 0.2), rgba(255, 255, 255, 0.2));
-.setColor(BTN-DEFAULT-BG, #f2f2f2, rgba(255, 255, 255, 0.08));
-.setColor(BTN-DEFAULT-COLOR, #06ae56, rgba(255, 255, 255, 0.8));
-.setColor(BTN-DEFAULT-ACTIVE-BG, overlay(rgba(0, 0, 0, 0.05), #f2f2f2), overlay(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.08)));
+.setColor(--BTN-DISABLED-FONT-COLOR, rgba(0, 0, 0, 0.2), rgba(255, 255, 255, 0.2));
+.setColor(--BTN-DEFAULT-BG, #f2f2f2, rgba(255, 255, 255, 0.08));
+.setColor(--BTN-DEFAULT-COLOR, #06ae56, rgba(255, 255, 255, 0.8));
+.setColor(--BTN-DEFAULT-ACTIVE-BG, overlay(rgba(0, 0, 0, 0.05), #f2f2f2), overlay(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.08)));
 
-@BtnWidth: 184px;
-@BtnHeight: 40px;
-@BtnFontSize: 17px;
-@BtnBorderRadius: 4px;
-@BtnDefaultGap: 16px;
+@weuiBtnWidth: 184px;
+@weuiBtnHeight: 40px;
+@weuiBtnFontSize: 17px;
+@weuiBtnBorderRadius: 4px;
+@weuiBtnDefaultGap: 16px;
 
-@BtnMiniFontSize: 16px;
-@BtnMiniHeight: 32px;
+@weuiBtnMiniFontSize: 16px;
+@weuiBtnMiniHeight: 32px;
 
-@BtnCellHeight: 56px;
-@BtnCellGap: 16px;
-@BtnCellLineHeight:unit((@BtnCellHeight - 2 * @BtnCellGap) / @BtnFontSize);
+@weuiBtnCellHeight: 56px;
+@weuiBtnCellGap: 16px;
+@weuiBtnCellLineHeight:unit((@weuiBtnCellHeight - 2 * @weuiBtnCellGap) / @weuiBtnFontSize);
 
-@BtnFontColor: #fff;
-@BtnDisabledFontColor: var(BTN-DISABLED-FONT-COLOR);
-@BtnDisabledBg: var(BTN-DEFAULT-BG);
+@weuiBtnFontColor: #fff;
+@weuiBtnDisabledFontColor: var(--BTN-DISABLED-FONT-COLOR);
+@weuiBtnDisabledBg: var(--BTN-DEFAULT-BG);
 
 // default
-@BtnDefaultFontColor: var(BTN-DEFAULT-COLOR);
-@BtnDefaultDisabledFontColor: @BtnDisabledFontColor;
-@BtnDefaultBg: var(BTN-DEFAULT-BG);
-@BtnDefaultActiveBg: var(BTN-DEFAULT-ACTIVE-BG);
-@BtnDefaultDisabledBg: @BtnDisabledBg;
+@weuiBtnDefaultFontColor: var(--BTN-DEFAULT-COLOR);
+@weuiBtnDefaultDisabledFontColor: @weuiBtnDisabledFontColor;
+@weuiBtnDefaultBg: var(--BTN-DEFAULT-BG);
+@weuiBtnDefaultActiveBg: var(--BTN-DEFAULT-ACTIVE-BG);
+@weuiBtnDefaultDisabledBg: @weuiBtnDisabledBg;
 
 // primary
-@BtnPrimaryFontColor: @BtnFontColor;
-@BtnPrimaryDisabledFontColor: @BtnDisabledFontColor;
-@BtnPrimaryBg: var(BRAND);
-@BtnPrimaryActiveBg: var(TAG-TEXT-GREEN);
-@BtnPrimaryDisabledBg: @BtnDisabledBg;
+@weuiBtnPrimaryFontColor: @weuiBtnFontColor;
+@weuiBtnPrimaryDisabledFontColor: @weuiBtnDisabledFontColor;
+@weuiBtnPrimaryBg: var(--BRAND);
+@weuiBtnPrimaryActiveBg: var(--TAG-TEXT-GREEN);
+@weuiBtnPrimaryDisabledBg: @weuiBtnDisabledBg;
 
 // warn
-@BtnWarnFontColor: @ColorWarn;
-@BtnWarnDisabledFontColor: @BtnDisabledFontColor;
-@BtnWarnBg: @BtnDefaultBg;
-@BtnWarnActiveBg: @BtnDefaultActiveBg;
-@BtnwarnDisabledBg: @BtnDefaultDisabledBg;
+@weuiBtnWarnFontColor: @weuiColorWarn;
+@weuiBtnWarnDisabledFontColor: @weuiBtnDisabledFontColor;
+@weuiBtnWarnBg: @weuiBtnDefaultBg;
+@weuiBtnWarnActiveBg: @weuiBtnDefaultActiveBg;
+@weuiBtnwarnDisabledBg: @weuiBtnDefaultDisabledBg;

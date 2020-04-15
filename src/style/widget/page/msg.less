@@ -18,18 +18,18 @@
 @import "../button/button";
 
 .msg {
-    padding-top: @MsgPaddingTop;
-    padding: calc(@MsgPaddingTop ~"+ constant(safe-area-inset-top)") constant(safe-area-inset-right) constant(safe-area-inset-bottom) constant(safe-area-inset-left);
-    padding: calc(@MsgPaddingTop ~"+ env(safe-area-inset-top)") env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+    padding-top: @weuiMsgPaddingTop;
+    padding: calc(@weuiMsgPaddingTop ~"+ constant(safe-area-inset-top)") constant(safe-area-inset-right) constant(safe-area-inset-bottom) constant(safe-area-inset-left);
+    padding: calc(@weuiMsgPaddingTop ~"+ env(safe-area-inset-top)") env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
     text-align: center;
     line-height: 1.4;
     min-height: 100%;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    background-color: var(BG-2);
+    background-color: var(--BG-2);
     a:not(.btn) {
-        color: @LinkColorDefault;
+        color: @weuiLinkColorDefault;
         display: inline-block;
         vertical-align: baseline;
     }
@@ -45,23 +45,23 @@
     &:first-child { padding-top: 96px; }
 }
 .msg__title {
-    margin-bottom: @MsgTitleGap;
+    margin-bottom: @weuiMsgTitleGap;
     font-weight: 700;
     font-size: 22px;
-    color: @TextColorTitle;
+    color: @weuiTextColorTitle;
     word-wrap: break-word;
     word-break: break-all;
 }
 .msg__desc {
     font-size: 17px;
-    color: @TextColorTitle;
+    color: @weuiTextColorTitle;
     word-wrap: break-word;
     word-break: break-all;
     margin-bottom: 16px;
 }
 .msg__desc-primary {
     font-size: 14px;
-    color: @TextColorDesc;
+    color: @weuiTextColorDesc;
     word-wrap: break-word;
     word-break: break-all;
     margin-bottom: 16px;
@@ -87,15 +87,15 @@
 }
 .msg__tips {
     font-size: 12px;
-    color: @TextColorDesc;
+    color: @weuiTextColorDesc;
 }
 .msg__extra-area {
     margin-bottom: 24px;
     font-size: 12px;
-    color: @TextColorDesc;
+    color: @weuiTextColorDesc;
     a,
     navigator {
-        color: @LinkColorDefault;
+        color: @weuiLinkColorDefault;
     }
     navigator {
         display: inline;

@@ -16,32 +16,32 @@
 
 @import "../theme/index";
 
-.setColor(BG-COLOR-ACTIVE, #ececec, overlay(rgba(255, 255, 255, 0.05), #2c2c2c));
+.setColor(--BG-COLOR-ACTIVE, #ececec, overlay(rgba(255, 255, 255, 0.05), #2c2c2c));
 
 // color
-@ColorPrimary: var(BRAND);
-@ColorWarn: var(RED);
+@weuiColorPrimary: var(--BRAND);
+@weuiColorWarn: var(--RED);
 
 // active mask
-@ActiveMaskBlack: rgba(0, 0, 0, 0.15);
+@weuiActiveMaskBlack: rgba(0, 0, 0, 0.15);
 
 // link
-@LinkColorDefault: var(LINK);
+@weuiLinkColorDefault: var(--LINK);
 
 // background
-@BgColorDefault: var(BG-0);
-@BgColorPrimary: var(BG-1);
-@BgColorActive: var(BG-COLOR-ACTIVE);
+@weuiBgColorDefault: var(--BG-0);
+@weuiBgColorPrimary: var(--BG-1);
+@weuiBgColorActive: var(--BG-COLOR-ACTIVE);
 
 // line
-@LineColorLight: var(FG-3);
-@LineColorDark: var(FG-2);
+@weuiLineColorLight: var(--FG-3);
+@weuiLineColorDark: var(--FG-2);
 
 // text
-@TextColorTitle: var(FG-0);
-@TextColorDesc: var(FG-1);
-@TextColorTips: var(FG-2);
-@TextColorWarn: @ColorWarn;
+@weuiTextColorTitle: var(--FG-0);
+@weuiTextColorDesc: var(--FG-1);
+@weuiTextColorTips: var(--FG-2);
+@weuiTextColorWarn: @weuiColorWarn;
 
 
 

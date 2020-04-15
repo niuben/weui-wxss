@@ -15,7 +15,7 @@
 */
 
 @import "../../base/fn";
-@ActionSheetAndroidBorderRadius: 2px;
+@weuiActionSheetAndroidBorderRadius: 2px;
 
 .actionsheet {
     position: fixed;
@@ -25,7 +25,7 @@
     backface-visibility: hidden;
     z-index: 5000;
     width: 100%;
-    background-color: @BgColorPrimary;
+    background-color: @weuiBgColorPrimary;
     //slide up animation
     transition: transform 0.3s;
     border-top-left-radius: 12px;
@@ -41,37 +41,37 @@
     flex-direction: column;
     text-align: center;
     font-size: 12px;
-    color: @TextColorDesc;
+    color: @weuiTextColorDesc;
     line-height: 1.4;
-    background: var(BG-2);
+    background: var(--BG-2);
     &:before {
-        .setBottomLine(@CellBorderColor);
+        .setBottomLine(@weuiCellBorderColor);
     }
     .actionsheet__title-text {
         .ellipsisLn(2);
     }
 }
 .actionsheet__menu {
-    color: @TextColorTitle;
-    background-color: var(BG-2);
+    color: @weuiTextColorTitle;
+    background-color: var(--BG-2);
 }
 .actionsheet__action {
     margin-top: 8px;
-    background-color: var(BG-2);
+    background-color: var(--BG-2);
     padding-bottom: constant(safe-area-inset-bottom);
     padding-bottom: env(safe-area-inset-bottom);
 }
 .actionsheet__cell {
     position: relative;
-    padding: @CellGapV;
+    padding: @weuiCellGapV;
     text-align: center;
     font-size: 17px;
-    line-height: @CellLineHeight;
+    line-height: @weuiCellLineHeight;
     &:before {
-        .setTopLine(@CellBorderColor);
+        .setTopLine(@weuiCellBorderColor);
     }
     &:active {
-        background-color: @BgColorActive;
+        background-color: @weuiBgColorActive;
     }
     &:first-child {
         &:before {
@@ -80,7 +80,7 @@
     }
 }
 .actionsheet__cell_warn {
-    color: @ColorWarn;
+    color: @weuiColorWarn;
 }
 
 
@@ -106,22 +106,22 @@
         display: none;
     }
     .actionsheet__menu {
-        border-radius: @ActionSheetAndroidBorderRadius;
+        border-radius: @weuiActionSheetAndroidBorderRadius;
         box-shadow: 0 6px 30px 0 rgba(0, 0, 0, 0.1);
     }
     .actionsheet__cell {
-        padding: @CellGapV;
+        padding: @weuiCellGapV;
         font-size: 17px;
-        line-height: @CellLineHeight;
-        color: @TextColorTitle;
+        line-height: @weuiCellLineHeight;
+        color: @weuiTextColorTitle;
         text-align: left;
         &:first-child {
-            border-top-left-radius: @ActionSheetAndroidBorderRadius;
-            border-top-right-radius: @ActionSheetAndroidBorderRadius;
+            border-top-left-radius: @weuiActionSheetAndroidBorderRadius;
+            border-top-right-radius: @weuiActionSheetAndroidBorderRadius;
         }
         &:last-child {
-            border-bottom-left-radius: @ActionSheetAndroidBorderRadius;
-            border-bottom-right-radius: @ActionSheetAndroidBorderRadius;
+            border-bottom-left-radius: @weuiActionSheetAndroidBorderRadius;
+            border-bottom-right-radius: @weuiActionSheetAndroidBorderRadius;
         }
     }
 }

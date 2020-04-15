@@ -3,4 +3,4 @@
  * Copyright 2020 Tencent, Inc.
  * Licensed under the MIT license
  */
-.page{background-color:var(--weui-BG-2)}image{margin:4px 0}
+.page{background-color:var(--BG-2)}image{margin:4px 0}

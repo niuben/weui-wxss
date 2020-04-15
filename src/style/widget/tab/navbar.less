@@ -20,12 +20,12 @@
     display: flex;
     position: relative;
     z-index: 500;
-    background-color: var(BG-2);
+    background-color: var(--BG-2);
     padding-top: constant(safe-area-inset-top);
     padding-top: env(safe-area-inset-top);
 
     &:after {
-        .setBottomLine(@LineColorLight);
+        .setBottomLine(@weuiLineColorLight);
     }
 
     & + .tab__panel {
@@ -43,19 +43,19 @@
     padding-top: calc(16px ~"+ env(safe-area-inset-top)");
     text-align: center;
     font-size: 17px;
-    line-height: unit((@NavBarHeight - 32) / 17);
+    line-height: unit((@weuiNavBarHeight - 32) / 17);
     .setTapColor();
 
     &:active {
-        background-color: @BgColorActive;
+        background-color: @weuiBgColorActive;
     }
 
     &.bar__item_on {
-        background-color: @BgColorActive;
+        background-color: @weuiBgColorActive;
     }
 
     &:after {
-        .setRightLine(@LineColorLight);
+        .setRightLine(@weuiLineColorLight);
     }
 
     &:first-child {

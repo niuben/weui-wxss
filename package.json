@@ -32,5 +32,8 @@
     "gulp-less": "^3.1.0",
     "gulp-postcss": "^6.2.0",
     "gulp-rename": "^1.2.2"
+  },
+  "dependencies": {
+    "renamer": "^2.0.0"
   }
 }

@@ -14,7 +14,7 @@
 * limitations under the License.
 */
 
-@SearchInputHeight:32px;
+@weuiSearchInputHeight:32px;
 
 @import "../../base/fn";
 .search-bar {
@@ -22,7 +22,7 @@
     padding: 8px;
     display: flex;
     box-sizing: border-box;
-    background-color: @BgColorDefault;
+    background-color: @weuiBgColorDefault;
     -webkit-text-size-adjust: 100%;
     align-items: center;
     &.search-bar_focusing {
@@ -42,7 +42,7 @@
 .search-bar__form {
     position: relative;
     flex: auto;
-    background-color: var(BG-2);
+    background-color: var(--BG-2);
     border-radius: 4px;
 }
 .search-bar__box {
@@ -56,14 +56,14 @@
     .search-bar__input {
         padding: 8px 0;
         width: 100%;
-        height: unit(@SearchInputHeight - 16px)/14em;
+        height: unit(@weuiSearchInputHeight - 16px)/14em;
         border: 0;
         font-size: 14px;
-        line-height: unit(@SearchInputHeight - 16px)/14em;
+        line-height: unit(@weuiSearchInputHeight - 16px)/14em;
         box-sizing: content-box;
         background: transparent;
-        caret-color: @ColorPrimary;
-        color: @TextColorTitle;
+        caret-color: @weuiColorPrimary;
+        color: @weuiTextColorTitle;
         &:focus {
             outline: none;
         }
@@ -97,8 +97,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: @TextColorDesc;
-    background: var(BG-2);
+    color: @weuiTextColorDesc;
+    background: var(--BG-2);
     span {
         display: inline-block;
         font-size: 14px;
@@ -112,7 +112,7 @@
     display: none;
     margin-left: 8px;
     line-height: 28px;
-    color: @LinkColorDefault;
+    color: @weuiLinkColorDefault;
     white-space: nowrap;
 }
 .search-bar__input:not(:valid) + .icon-clear {

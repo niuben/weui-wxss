@@ -21,19 +21,19 @@
 }
 .uploader__hd {
     display: flex;
-    padding-bottom: @CellGapV;
+    padding-bottom: @weuiCellGapV;
     align-items: center;
 }
 .uploader__title {
     flex: 1;
 }
 .uploader__info {
-    color: @TextColorTips;
+    color: @weuiTextColorTips;
 }
 
 .uploader__bd {
-    margin-bottom: @CellGapH - (@CellGapV + @UploaderFileSpacing);
-    margin-right: -@UploaderFileSpacing;
+    margin-bottom: @weuiCellGapH - (@weuiCellGapV + @weuiUploaderFileSpacing);
+    margin-right: -@weuiUploaderFileSpacing;
     overflow: hidden;
 }
 .uploader__files {
@@ -41,10 +41,10 @@
 }
 .uploader__file {
     float: left;
-    margin-right: @UploaderFileSpacing;
-    margin-bottom: @UploaderFileSpacing;
-    width: @UploaderSize;
-    height: @UploaderSize;
+    margin-right: @weuiUploaderFileSpacing;
+    margin-bottom: @weuiUploaderFileSpacing;
+    width: @weuiUploaderSize;
+    height: @weuiUploaderSize;
     background: no-repeat center center;
     background-size: cover;
 }
@@ -69,7 +69,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: var(WHITE);
+    color: var(--WHITE);
     .icon-warn {
         display: inline-block;
     }
@@ -77,10 +77,10 @@
 .uploader__input-box {
     float: left;
     position: relative;
-    margin-right: @UploaderFileSpacing;
-    margin-bottom: @UploaderFileSpacing;
-    width: @UploaderSize;
-    height: @UploaderSize;
+    margin-right: @weuiUploaderFileSpacing;
+    margin-bottom: @weuiUploaderFileSpacing;
+    width: @weuiUploaderSize;
+    height: @weuiUploaderSize;
     box-sizing: border-box;
     background-color: #ededed;
     .dark({
@@ -99,12 +99,12 @@
         });
     }
     &:before {
-        width: @UploaderBorderWidth + 1;
-        height: @UploaderSize / 3;
+        width: @weuiUploaderBorderWidth + 1;
+        height: @weuiUploaderSize / 3;
     }
     &:after {
-        width: @UploaderSize / 3;
-        height: @UploaderBorderWidth + 1;
+        width: @weuiUploaderSize / 3;
+        height: @weuiUploaderBorderWidth + 1;
     }
     &:active {
         &:before,

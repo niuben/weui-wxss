@@ -16,24 +16,24 @@
 
 @import "../../base/fn";
 
-@CellBg: var(BG-2);
-@CellBorderColor: @LineColorLight;
-@CellGapV: 16px;
-@CellGapH: 16px;
-@CellInnerGapH: 16px;
-@CellHeight: 56px;
-@CellFontSize: 17px;
-@CellTipsFontSize: 14px;
-@CellLabelWidth: 105px;
-@CellActiveBg: @BgColorActive;
+@weuiCellBg: var(--BG-2);
+@weuiCellBorderColor: @weuiLineColorLight;
+@weuiCellGapV: 16px;
+@weuiCellGapH: 16px;
+@weuiCellInnerGapH: 16px;
+@weuiCellHeight: 56px;
+@weuiCellFontSize: 17px;
+@weuiCellTipsFontSize: 14px;
+@weuiCellLabelWidth: 105px;
+@weuiCellActiveBg: @weuiBgColorActive;
 
-@CellLineHeight: unit((@CellHeight - 2 * @CellGapV) / @CellFontSize); // 高度减去上下padding的行高
-@CellsMarginTop: 8px;
+@weuiCellLineHeight: unit((@weuiCellHeight - 2 * @weuiCellGapV) / @weuiCellFontSize); // 高度减去上下padding的行高
+@weuiCellsMarginTop: 8px;
 
 // weui switch
-@SwitchHeight: 32px;
+@weuiSwitchHeight: 32px;
 
 // weui uploader
-@UploaderFileSpacing: 8px;
-@UploaderSize: 96px;
-@UploaderBorderWidth: 1px;
+@weuiUploaderFileSpacing: 8px;
+@weuiUploaderSize: 96px;
+@weuiUploaderBorderWidth: 1px;

@@ -18,23 +18,23 @@
 
 .form-preview {
     position: relative;
-    background-color: var(BG-2);
+    background-color: var(--BG-2);
     &:before {
-        .setTopLine(@CellBorderColor);
+        .setTopLine(@weuiCellBorderColor);
     }
     &:after {
-        .setBottomLine(@CellBorderColor);
+        .setBottomLine(@weuiCellBorderColor);
     }
 }
 .form-preview__hd {
     position: relative;
-    padding: @CellGapV;
+    padding: @weuiCellGapV;
     text-align: right;
     line-height: 2.5em;
     &:after {
-        .setBottomLine(@CellBorderColor);
+        .setBottomLine(@weuiCellBorderColor);
 
-        left: @CellGapH;
+        left: @weuiCellGapH;
     }
     .form-preview__value {
         font-style: normal;
@@ -42,10 +42,10 @@
     }
 }
 .form-preview__bd {
-    padding: @CellGapV;
+    padding: @weuiCellGapV;
     font-size: 0.9em;
     text-align: right;
-    color: @TextColorDesc;
+    color: @weuiTextColorDesc;
     line-height: 2;
 }
 .form-preview__ft {
@@ -53,7 +53,7 @@
     line-height: 50px;
     display: flex;
     &:before {
-        .setTopLine(@DialogLineColor);
+        .setTopLine(@weuiDialogLineColor);
     }
 }
 .form-preview__item {
@@ -63,7 +63,7 @@
     float: left;
     margin-right: 1em;
     min-width: 4em;
-    color: @TextColorDesc;
+    color: @weuiTextColorDesc;
     text-align: justify;
     text-align-last: justify;
 }
@@ -72,13 +72,13 @@
     overflow: hidden;
     word-break: normal;
     word-wrap: break-word;
-    color: var(FG-0);
+    color: var(--FG-0);
 }
 .form-preview__btn {
     position: relative;
     display: block;
     flex: 1;
-    color: @DialogLinkColor;
+    color: @weuiDialogLinkColor;
     text-align: center;
     .setTapColor();
     button& {
@@ -89,10 +89,10 @@
         font-size: inherit;
     }
     &:active {
-        background-color: @DialogLinkActiveBc;
+        background-color: @weuiDialogLinkActiveBc;
     }
     &:after {
-        .setLeftLine(@DialogLineColor);
+        .setLeftLine(@weuiDialogLineColor);
     }
     &:first-child {
         &:after {
@@ -101,8 +101,8 @@
     }
 }
 .form-preview__btn_default {
-    color: var(FG-HALF);
+    color: var(--FG-HALF);
 }
 .form-preview__btn_primary {
-    color: @LinkColorDefault;
+    color: @weuiLinkColorDefault;
 }

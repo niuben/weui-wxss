@@ -30,11 +30,11 @@
             mask-repeat: no-repeat;
             mask-size: 100%;
             background-color: currentColor;
-            color: @TextColorTips;
+            color: @weuiTextColorTips;
             mask-image: url(data:image/svg+xml,%3Csvg%20width%3D%2212%22%20height%3D%2224%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M2.454%206.58l1.06-1.06%205.78%205.779a.996.996%200%20010%201.413l-5.78%205.779-1.06-1.061%205.425-5.425-5.425-5.424z%22%20fill%3D%22%23B2B2B2%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E);
             position: absolute;
             top: 50%;
-            right: @CellGapH;
+            right: @weuiCellGapH;
             margin-top: -12px;
         }
     }
@@ -47,24 +47,24 @@
     background-color: transparent;
     width: 100%;
     font-size: inherit;
-    height: @CellHeight;
-    line-height: @CellHeight;
+    height: @weuiCellHeight;
+    line-height: @weuiCellHeight;
     position: relative;
     z-index: 1;
-    padding-left: @CellGapH;
-    color: var(FG-0);
+    padding-left: @weuiCellGapH;
+    color: var(--FG-0);
 }
 
 .cell_select-before {
-    padding-right: @CellGapH;
+    padding-right: @weuiCellGapH;
     .select {
-        width: @CellLabelWidth;
+        width: @weuiCellLabelWidth;
         box-sizing: border-box;
     }
     .cell__hd {
         position: relative;
         &:after {
-            .setRightLine(@CellBorderColor);
+            .setRightLine(@weuiCellBorderColor);
         }
         &:before {
             content: " ";
@@ -74,16 +74,16 @@
             mask-repeat: no-repeat;
             mask-size: 100%;
             background-color: currentColor;
-            color: @TextColorTips;
+            color: @weuiTextColorTips;
             mask-image: url(data:image/svg+xml,%3Csvg%20width%3D%2212%22%20height%3D%2224%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M2.454%206.58l1.06-1.06%205.78%205.779a.996.996%200%20010%201.413l-5.78%205.779-1.06-1.061%205.425-5.425-5.425-5.424z%22%20fill%3D%22%23B2B2B2%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E);
             position: absolute;
             top: 50%;
-            right: @CellGapH;
+            right: @weuiCellGapH;
             margin-top: -12px;
         }
     }
     .cell__bd {
-        padding-left: @CellGapH;
+        padding-left: @weuiCellGapH;
         &:after {
             display: none;
         }
@@ -97,7 +97,7 @@
 }
 
 .cell_select-after {
-    padding-left: @CellGapH;
+    padding-left: @weuiCellGapH;
     .select {
         padding-left: 0;
     }

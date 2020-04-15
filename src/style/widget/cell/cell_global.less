@@ -24,21 +24,21 @@ z-index:
 */
 
 .cells {
-    margin-top: @CellsMarginTop;
-    background-color: @CellBg;
-    line-height: @CellLineHeight;
-    font-size: @CellFontSize; //cell中间有效高度23px，跟客户端默认图标尺寸一致
+    margin-top: @weuiCellsMarginTop;
+    background-color: @weuiCellBg;
+    line-height: @weuiCellLineHeight;
+    font-size: @weuiCellFontSize; //cell中间有效高度23px，跟客户端默认图标尺寸一致
     overflow: hidden; //因为每个cell的border使用before元素left搞的，ie下伪元素的containing block估计跟标准不同，在cell上用oh不生效
 
     // onepx
     position: relative;
     &:before {
-        .setTopLine(@CellBorderColor);
+        .setTopLine(@weuiCellBorderColor);
 
         z-index: 2;
     }
     &:after {
-        .setBottomLine(@CellBorderColor);
+        .setBottomLine(@weuiCellBorderColor);
 
         z-index: 2;
     }
@@ -47,10 +47,10 @@ z-index:
 .cells__title {
     margin-top: 16px;
     margin-bottom: 3px;
-    padding-left: @CellGapH;
-    padding-right: @CellGapH;
-    color: @TextColorDesc;
-    font-size: @CellTipsFontSize;
+    padding-left: @weuiCellGapH;
+    padding-right: @weuiCellGapH;
+    color: @weuiTextColorDesc;
+    font-size: @weuiCellTipsFontSize;
     line-height: 1.4;
 
     & + .cells {
@@ -60,14 +60,14 @@ z-index:
 
 .cells__tips {
     margin-top: 8px;
-    color: @TextColorDesc;
-    padding-left: @CellGapH;
-    padding-right: @CellGapH;
-    font-size: @CellTipsFontSize;
+    color: @weuiTextColorDesc;
+    padding-left: @weuiCellGapH;
+    padding-right: @weuiCellGapH;
+    font-size: @weuiCellTipsFontSize;
     line-height: 1.4;
     a,
     navigator {
-        color: @LinkColorDefault;
+        color: @weuiLinkColorDefault;
     }
     navigator {
         display: inline;
@@ -75,14 +75,14 @@ z-index:
 }
 
 .cell {
-    padding: @CellGapV;
+    padding: @weuiCellGapV;
     position: relative; //这个是为了兼容cells容器onepx方案被before挡住而做的
     display: flex;
     align-items: center;
     &:before {
-        .setTopLine(@CellBorderColor);
+        .setTopLine(@weuiCellBorderColor);
 
-        left: @CellGapH;
+        left: @weuiCellGapH;
         z-index: 2;
     }
     &:first-child {
@@ -93,7 +93,7 @@ z-index:
 }
 .cell_active {
     &:active {
-        background-color: @BgColorActive;
+        background-color: @weuiBgColorActive;
     }
 }
 .cell_primary {
@@ -104,5 +104,5 @@ z-index:
 }
 .cell__ft {
     text-align: right;
-    color: @TextColorDesc;
+    color: @weuiTextColorDesc;
 }
