@@ -1,30 +1,30 @@
-<view class="page" data-weui-theme="{{theme}}">
+<view class="page" data-theme="{{theme}}">
 	<view class="page__bd" style="height: 100%;">
-		<view class="weui-tab">
-			<view class="weui-tab__panel">
+		<view class="tab">
+			<view class="tab__panel">
 			</view>
-			<view class="weui-tabbar">
-				<view class="weui-tabbar__item weui-bar__item_on">
+			<view class="tabbar">
+				<view class="tabbar__item bar__item_on">
 					<view style="display: inline-block; position: relative;">
-						<image src="../images/icon_tabbar.png" alt class="weui-tabbar__icon"></image>
-						<text class="weui-badge" style="position: absolute; top: -2px; right: -13px;">8</text>
+						<image src="../images/icon_tabbar.png" alt class="tabbar__icon"></image>
+						<text class="badge" style="position: absolute; top: -2px; right: -13px;">8</text>
 					</view>
-					<view class="weui-tabbar__label">微信</view>
+					<view class="tabbar__label">微信</view>
 				</view>
-				<view class="weui-tabbar__item">
-					<image src="../images/icon_tabbar.png" alt class="weui-tabbar__icon"></image>
-					<view class="weui-tabbar__label">通讯录</view>
+				<view class="tabbar__item">
+					<image src="../images/icon_tabbar.png" alt class="tabbar__icon"></image>
+					<view class="tabbar__label">通讯录</view>
 				</view>
-				<view class="weui-tabbar__item">
+				<view class="tabbar__item">
 					<view style="display: inline-block; position: relative;">
-						<image src="../images/icon_tabbar.png" alt class="weui-tabbar__icon"></image>
-						<text class="weui-badge weui-badge_dot" style="position: absolute; top: 0; right: -6px;"></text>
+						<image src="../images/icon_tabbar.png" alt class="tabbar__icon"></image>
+						<text class="badge badge_dot" style="position: absolute; top: 0; right: -6px;"></text>
 					</view>
-					<view class="weui-tabbar__label">发现</view>
+					<view class="tabbar__label">发现</view>
 				</view>
-				<view class="weui-tabbar__item">
-					<image src="../images/icon_tabbar.png" alt class="weui-tabbar__icon"></image>
-					<view class="weui-tabbar__label">我</view>
+				<view class="tabbar__item">
+					<image src="../images/icon_tabbar.png" alt class="tabbar__icon"></image>
+					<view class="tabbar__label">我</view>
 				</view>
 			</view>
 		</view>

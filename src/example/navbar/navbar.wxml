@@ -1,18 +1,18 @@
-<view class="page" data-weui-theme="{{theme}}">
+<view class="page" data-theme="{{theme}}">
 	<view class="page__bd" style="height: 100%;">
-		<view class="weui-tab">
-			<view class="weui-navbar">
-				<view class="weui-navbar__item weui-bar__item_on">
+		<view class="tab">
+			<view class="navbar">
+				<view class="navbar__item bar__item_on">
 选项一
 				</view>
-				<view class="weui-navbar__item">
+				<view class="navbar__item">
 选项二
 				</view>
-				<view class="weui-navbar__item">
+				<view class="navbar__item">
 选项三
 				</view>
 			</view>
-			<view class="weui-tab__panel">
+			<view class="tab__panel">
 			</view>
 		</view>
 	</view>

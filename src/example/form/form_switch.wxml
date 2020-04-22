@@ -1,25 +1,25 @@
-<view class="page" data-weui-theme="{{theme}}">
-	<view class="weui-form">
-		<view class="weui-form__text-area">
-			<h2 class="weui-form__title">开关样式展示</h2>
+<view class="page" data-theme="{{theme}}">
+	<view class="form">
+		<view class="form__text-area">
+			<h2 class="form__title">开关样式展示</h2>
 		</view>
-		<view class="weui-form__control-area">
-			<view class="weui-cells__group weui-cells__group_form">
-				<view class="weui-cells weui-cells_form">
-                    <view class="weui-cell weui-cell_active weui-cell_switch">
-                        <view class="weui-cell__bd">标题文字</view>
-                        <view class="weui-cell__ft">
-                            <label class="weui-switch-cp">
-                                <checkbox class="weui-switch-cp__input" checked="true" />
-                                <view class="weui-switch-cp__box"></view>
+		<view class="form__control-area">
+			<view class="cells__group cells__group_form">
+				<view class="cells cells_form">
+                    <view class="cell cell_active cell_switch">
+                        <view class="cell__bd">标题文字</view>
+                        <view class="cell__ft">
+                            <label class="switch-cp">
+                                <checkbox class="switch-cp__input" checked="true" />
+                                <view class="switch-cp__box"></view>
                             </label>
                         </view>
                     </view>
 				</view>
 			</view>
 		</view>
-		<view class="weui-form__opr-area">
-			<a class="weui-btn weui-btn_primary">确定</a>
+		<view class="form__opr-area">
+			<a class="btn btn_primary">确定</a>
 		</view>
 	</view>
 </view>
