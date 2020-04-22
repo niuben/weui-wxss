@@ -18,7 +18,7 @@
 
 .label {
     display: block;
-    width: @CellLabelWidth;
+    width: @weuiCellLabelWidth;
     .text_wrap();
 }
 .input {
@@ -29,8 +29,8 @@
     background-color: transparent;
     font-size: inherit;
     color: inherit;
-    height: unit(@CellLineHeight, em);
-    line-height: @CellLineHeight;
+    height: unit(@weuiCellLineHeight, em);
+    line-height: @weuiCellLineHeight;
 
     // hides the spin-button
     &::-webkit-outer-spin-button,
@@ -48,7 +48,7 @@
 }
 .input::placeholder,
 .input__placeholder {
-    color: var(FG-2);
+    color: var(--FG-2);
 }
 
 .textarea {
@@ -64,11 +64,11 @@
 }
 
 .textarea-counter {
-    color: @TextColorTips;
+    color: @weuiTextColorTips;
     text-align: right;
     font-size: 14px;
     .cell_warn & {
-        color: @TextColorWarn;
+        color: @weuiTextColorWarn;
     }
 }
 
@@ -94,7 +94,7 @@
     }
 }
 .cell_warn {
-    color: @TextColorWarn;
+    color: @weuiTextColorWarn;
     .icon-warn { display: inline-block; }
 }
 .cell_readonly,
@@ -103,11 +103,11 @@
     .textarea {
         &:disabled {
             opacity: 1;
-            -webkit-text-fill-color: @TextColorDesc;
+            -webkit-text-fill-color: @weuiTextColorDesc;
         }
         &[disabled],
         &[readonly] {
-            color: @TextColorDesc;
+            color: @weuiTextColorDesc;
         }
     }
 }

@@ -24,12 +24,12 @@
 .slider__inner {
     position: relative;
     height: 2px;
-    background-color: @LineColorLight;
+    background-color: @weuiLineColorLight;
 }
 
 .slider__track {
     height: 2px;
-    background-color: @ColorPrimary;
+    background-color: @weuiColorPrimary;
     width: 0;
 }
 
@@ -43,8 +43,9 @@
     margin-top: -14px;
     border-radius: 50%;
     background-color: #fff; // 固定色值
-    box-shadow: 0 0 4px var(FG-3);
+    box-shadow: 0 0 4px var(--FG-3);
 }
+
 
 .slider-box {
     display: flex;
@@ -56,7 +57,7 @@
 .slider-box__value {
     margin-left: 0.5em;
     min-width: 24px;
-    color: @TextColorDesc;
+    color: @weuiTextColorDesc;
     text-align: center;
     font-size: 14px;
 }

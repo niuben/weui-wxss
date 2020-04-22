@@ -16,16 +16,25 @@
 
 @import "../theme/index";
 
+<<<<<<< HEAD
 .setColor(BG-COLOR-ACTIVE, #ececec, overlay(rgba(255, 255, 255, 0.05), #2c2c2c));
 
 // color
 @ColorPrimary: var(BRAND);
 @ColorWarn: var(RED);
+=======
+.setColor(--BG-COLOR-ACTIVE, #ececec, overlay(rgba(255, 255, 255, 0.05), #2c2c2c));
+
+// color
+@weuiColorPrimary: var(--BRAND);
+@weuiColorWarn: var(--RED);
+>>>>>>> 0a4f2177fa11b681097644efe883e1799f26045f
 
 // active mask
 @ActiveMaskBlack: rgba(0, 0, 0, 0.15);
 
 // link
+<<<<<<< HEAD
 @LinkColorDefault: var(LINK);
 
 // background
@@ -42,6 +51,24 @@
 @TextColorDesc: var(FG-1);
 @TextColorTips: var(FG-2);
 @TextColorWarn: @ColorWarn;
+=======
+@weuiLinkColorDefault: var(--LINK);
+
+// background
+@weuiBgColorDefault: var(--BG-0);
+@weuiBgColorPrimary: var(--BG-1);
+@weuiBgColorActive: var(--BG-COLOR-ACTIVE);
+
+// line
+@weuiLineColorLight: var(--FG-3);
+@weuiLineColorDark: var(--FG-2);
+
+// text
+@weuiTextColorTitle: var(--FG-0);
+@weuiTextColorDesc: var(--FG-1);
+@weuiTextColorTips: var(--FG-2);
+@weuiTextColorWarn: @weuiColorWarn;
+>>>>>>> 0a4f2177fa11b681097644efe883e1799f26045f
 
 
 

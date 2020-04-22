@@ -34,6 +34,10 @@
     "gulp-rename": "^1.2.2"
   },
   "dependencies": {
+<<<<<<< HEAD
     "renamer": "^1.1.4"
+=======
+    "renamer": "^2.0.0"
+>>>>>>> 0a4f2177fa11b681097644efe883e1799f26045f
   }
 }

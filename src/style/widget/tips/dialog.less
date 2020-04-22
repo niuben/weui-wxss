@@ -23,7 +23,7 @@
     left: 16px;
     right: 16px;
     transform: translate(0, -50%);
-    background-color: @DialogBackgroundColor;
+    background-color: @weuiDialogBackgroundColor;
     text-align: center;
     border-radius: 12px;
     overflow: hidden;
@@ -35,7 +35,7 @@
     max-height: 90%;
 }
 .dialog__hd {
-    padding: 32px @DialogGapWidth 16px;
+    padding: 32px @weuiDialogGapWidth 16px;
 }
 .dialog__title {
     font-weight: 700;
@@ -45,18 +45,18 @@
 .dialog__bd {
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
-    padding: 0 @DialogGapWidth;
+    padding: 0 @weuiDialogGapWidth;
     margin-bottom: 32px;
     font-size: 17px;
     line-height: 1.4;
     .hyphens;
 
-    color: @TextColorDesc;
+    color: @weuiTextColorDesc;
     &:first-child {
         min-height: 40px;
-        padding: 32px @DialogGapWidth 0;
+        padding: 32px @weuiDialogGapWidth 0;
         font-weight: 700;
-        color: @TextColorTitle;
+        color: @weuiTextColorTitle;
         display: -webkit-box;
         display: -webkit-flex;
         display: flex;
@@ -75,24 +75,24 @@
     display: flex;
     &:after {
         content: " ";
-        .setTopLine(@DialogLineColor);
+        .setTopLine(@weuiDialogLineColor);
     }
 }
 .dialog__btn {
     display: block;
     flex: 1;
-    color: @DialogLinkColor;
+    color: @weuiDialogLinkColor;
     font-weight: 700;
     text-decoration: none;
     .setTapColor();
     &:active {
-        background-color: @DialogLinkActiveBc;
+        background-color: @weuiDialogLinkActiveBc;
     }
 
     position: relative;
     &:after {
         content: " ";
-        .setLeftLine(@DialogLineColor);
+        .setLeftLine(@weuiDialogLineColor);
     }
     &:first-child {
         &:after {
@@ -101,7 +101,7 @@
     }
 }
 .dialog__btn_default {
-    color: var(FG-HALF);
+    color: var(--FG-HALF);
 }
 
 .skin_android {
@@ -117,10 +117,10 @@
         text-align: left;
     }
     .dialog__bd {
-        color: @TextColorDesc;
+        color: @weuiTextColorDesc;
         text-align: left;
         &:first-child {
-            color: @TextColorTitle;
+            color: @weuiTextColorTitle;
         }
     }
     .dialog__ft {
@@ -128,7 +128,7 @@
         text-align: right;
         line-height: 40px;
         min-height: 40px;
-        padding: 0 @DialogGapWidth 16px;
+        padding: 0 @weuiDialogGapWidth 16px;
         &:after {
             display: none;
         }
@@ -145,7 +145,7 @@
         }
     }
     .dialog__btn_default {
-        color: var(FG-HALF);
+        color: var(--FG-HALF);
     }
 }
 

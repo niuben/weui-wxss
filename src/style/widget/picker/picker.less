@@ -24,7 +24,7 @@
     left: 0;
     bottom: 0;
     z-index: 5000;
-    background-color: var(BG-2);
+    background-color: var(--BG-2);
     padding-bottom: constant(safe-area-inset-bottom);
     padding-bottom: env(safe-area-inset-bottom);
     backface-visibility: hidden;
@@ -43,14 +43,14 @@
     font-size: 17px;
     line-height: 1.4;
     &:after {
-        .setBottomLine(@LineColorLight);
+        .setBottomLine(@weuiLineColorLight);
     }
 }
 
 .picker__bd {
     display: flex;
     position: relative;
-    background-color: var(BG-2);
+    background-color: var(--BG-2);
     height: 240px;
     overflow: hidden;
 }
@@ -100,10 +100,10 @@
     top: 92px;
     z-index: 3;
     &:before {
-        .setTopLine(@LineColorLight);
+        .setTopLine(@weuiLineColorLight);
     }
     &:after {
-        .setBottomLine(@LineColorLight);
+        .setBottomLine(@weuiLineColorLight);
     }
 }
 
@@ -118,12 +118,12 @@
     height: @pickerItemHeight;
     line-height: @pickerItemHeight;
     text-align: center;
-    color: @TextColorTitle;
+    color: @weuiTextColorTitle;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
 }
 
 .picker__item_disabled {
-    color: @TextColorDesc;
+    color: @weuiTextColorDesc;
 }

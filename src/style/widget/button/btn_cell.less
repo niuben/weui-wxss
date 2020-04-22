@@ -22,21 +22,21 @@
     margin-left: auto;
     margin-right: auto;
     box-sizing: border-box;
-    font-size: @BtnFontSize;
+    font-size: @weuiBtnFontSize;
     text-align: center;
     text-decoration: none;
-    color: @BtnFontColor;
-    line-height: @BtnCellLineHeight;
-    padding: @BtnCellGap;
+    color: @weuiBtnFontColor;
+    line-height: @weuiBtnCellLineHeight;
+    padding: @weuiBtnCellGap;
     .setTapColor();
 
     overflow: hidden;
-    background-color: var(BG-5);
+    background-color: var(--BG-5);
     & + & {
-        margin-top: @BtnDefaultGap;
+        margin-top: @weuiBtnDefaultGap;
     }
     &:active {
-        background-color: @BgColorActive;
+        background-color: @weuiBgColorActive;
     }
 }
 .btn_cell__icon {
@@ -47,13 +47,13 @@
     margin: -0.2em 0.34em 0 0;
 }
 .btn_cell-default {
-    color: var(FG-0);
+    color: var(--FG-0);
 }
 .btn_cell-primary {
-    color: @LinkColorDefault;
+    color: @weuiLinkColorDefault;
 }
 .btn_cell-warn {
-    color: @ColorWarn;
+    color: @weuiColorWarn;
 }
 
 

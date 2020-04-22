@@ -1,0 +1,60 @@
+/*
+* Tencent is pleased to support the open source community by making WeUI available.
+* 
+* Copyright (C) 2017 THL A29 Limited, a Tencent company. All rights reserved.
+* 
+* Licensed under the MIT License (the "License"); you may not use this file except in compliance
+* with the License. You may obtain a copy of the License at
+* 
+*       http://opensource.org/licenses/MIT
+* 
+* Unless required by applicable law or agreed to in writing, software distributed under the License is
+* distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+* either express or implied. See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+@import "../../base/fn";
+
+.setColor(BTN-DISABLED-FONT-COLOR, rgba(0, 0, 0, 0.2), rgba(255, 255, 255, 0.2));
+.setColor(BTN-DEFAULT-BG, #f2f2f2, rgba(255, 255, 255, 0.08));
+.setColor(BTN-DEFAULT-COLOR, #06ae56, rgba(255, 255, 255, 0.8));
+.setColor(BTN-DEFAULT-ACTIVE-BG, overlay(rgba(0, 0, 0, 0.05), #f2f2f2), overlay(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.08)));
+
+@BtnWidth: 184px;
+@BtnHeight: 40px;
+@BtnFontSize: 17px;
+@BtnBorderRadius: 4px;
+@BtnDefaultGap: 16px;
+
+@BtnMiniFontSize: 16px;
+@BtnMiniHeight: 32px;
+
+@BtnCellHeight: 56px;
+@BtnCellGap: 16px;
+@BtnCellLineHeight:unit((@BtnCellHeight - 2 * @BtnCellGap) / @BtnFontSize);
+
+@BtnFontColor: #fff;
+@BtnDisabledFontColor: var(BTN-DISABLED-FONT-COLOR);
+@BtnDisabledBg: var(BTN-DEFAULT-BG);
+
+// default
+@BtnDefaultFontColor: var(BTN-DEFAULT-COLOR);
+@BtnDefaultDisabledFontColor: @BtnDisabledFontColor;
+@BtnDefaultBg: var(BTN-DEFAULT-BG);
+@BtnDefaultActiveBg: var(BTN-DEFAULT-ACTIVE-BG);
+@BtnDefaultDisabledBg: @BtnDisabledBg;
+
+// primary
+@BtnPrimaryFontColor: @BtnFontColor;
+@BtnPrimaryDisabledFontColor: @BtnDisabledFontColor;
+@BtnPrimaryBg: var(BRAND);
+@BtnPrimaryActiveBg: var(TAG-TEXT-GREEN);
+@BtnPrimaryDisabledBg: @BtnDisabledBg;
+
+// warn
+@BtnWarnFontColor: @ColorWarn;
+@BtnWarnDisabledFontColor: @BtnDisabledFontColor;
+@BtnWarnBg: @BtnDefaultBg;
+@BtnWarnActiveBg: @BtnDefaultActiveBg;
+@BtnwarnDisabledBg: @BtnDefaultDisabledBg;

@@ -58,12 +58,12 @@
 .slideview__btn-group_default{
   .slideview__btn {
     background: #C7C7CC;
-    .dark({background: var(BG-4)});
+    .dark({background: var(--BG-4)});
   }
   &~&{
     &:before{
       .setLeftLine(#FFFFFF);
-      .dark({border-left-color: var(FG-3)});
+      .dark({border-left-color: var(--FG-3)});
     }
   }
   &:first-child{
@@ -109,7 +109,7 @@
     border-radius:50%;
     background-color:#FFFFFF;
     .dark({
-      background-color: var(BG-4);
+      background-color: var(--BG-4);
     });
   }
   .slideview__btn__icon{

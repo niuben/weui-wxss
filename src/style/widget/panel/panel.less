@@ -18,7 +18,7 @@
 
 
 .panel {
-    background-color: var(BG-2);
+    background-color: var(--BG-2);
     margin-top: 10px;
     &:first-child {
         margin-top: 0;
@@ -27,21 +27,21 @@
     position: relative;
     overflow: hidden;
     &:before {
-        .setTopLine(@LineColorLight);
+        .setTopLine(@weuiLineColorLight);
     }
     &:after {
-        .setBottomLine(@LineColorLight);
+        .setBottomLine(@weuiLineColorLight);
     }
 }
 
 .panel__hd {
     padding: 16px 16px 13px;
-    color: @TextColorTitle;
+    color: @weuiTextColorTitle;
     font-size: 15px;
     font-weight: 700;
     position: relative;
     &:after {
-        .setBottomLine(@LineColorLight);
+        .setBottomLine(@weuiLineColorLight);
 
         left: 15px;
     }

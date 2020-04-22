@@ -17,8 +17,8 @@
 @import "../../base/fn";
 
 .cell_switch {
-    padding-top: (@CellHeight - @SwitchHeight) / 2;
-    padding-bottom: (@CellHeight - @SwitchHeight) / 2;
+    padding-top: (@weuiCellHeight - @weuiSwitchHeight) / 2;
+    padding-bottom: (@weuiCellHeight - @weuiSwitchHeight) / 2;
 }
 .switch {
     appearance: none;
@@ -27,8 +27,8 @@
 .switch-cp__box {
     position: relative;
     width: 52px;
-    height: @SwitchHeight;
-    border: 2px solid @LineColorLight;
+    height: @weuiSwitchHeight;
+    border: 2px solid @weuiLineColorLight;
     outline: 0;
     border-radius: 16px;
     box-sizing: border-box;
@@ -42,7 +42,7 @@
         bottom: 0;
         right: 0;
         border-radius: 15px;
-        background-color: var(BG-3);
+        background-color: var(--BG-3);
         transition: transform 0.35s cubic-bezier(0.45, 1, 0.4, 1);
     }
     &:after {
@@ -50,8 +50,8 @@
         position: absolute;
         top: 0;
         left: 0;
-        width: @SwitchHeight - 4;
-        height: @SwitchHeight - 4;
+        width: @weuiSwitchHeight - 4;
+        height: @weuiSwitchHeight - 4;
         border-radius: 15px;
         background-color: #fff; // 固定色值
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
@@ -61,8 +61,8 @@
 .switch:checked,
 .switch-cp__input:checked + .switch-cp__box,
 .switch-cp__input[aria-checked="true"] + .switch-cp__box {
-    border-color: @ColorPrimary;
-    background-color: @ColorPrimary;
+    border-color: @weuiColorPrimary;
+    background-color: @weuiColorPrimary;
     &:before {
         transform: scale(0);
     }

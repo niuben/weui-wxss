@@ -42,30 +42,30 @@ input {
 .btn_mini {
     display: inline-block;
     width: auto;
-    padding: 0 unit(12px/@BtnMiniFontSize, em);
-    line-height: unit(@BtnMiniHeight/@BtnMiniFontSize);
-    font-size: @BtnMiniFontSize;
+    padding: 0 unit(12px/@weuiBtnMiniFontSize, em);
+    line-height: unit(@weuiBtnMiniHeight/@weuiBtnMiniFontSize);
+    font-size: @weuiBtnMiniFontSize;
 }
 
 
 /* gap between btn */
 .btn:not(.btn_mini) + .btn:not(.btn_mini) {
-    margin-top: @BtnDefaultGap;
+    margin-top: @weuiBtnDefaultGap;
 }
 
 .btn.btn_inline + .btn.btn_inline {
     margin-top: auto;
-    margin-left: @BtnDefaultGap;
+    margin-left: @weuiBtnDefaultGap;
 }
 
 .btn-area {
-    margin: 48px @BtnDefaultGap 8px;
+    margin: 48px @weuiBtnDefaultGap 8px;
 }
 .btn-area_inline {
     display: flex;
     .btn {
         margin-top: auto;
-        margin-right: @BtnDefaultGap;
+        margin-right: @weuiBtnDefaultGap;
         width: 100%;
         flex: 1;
         &:last-child {
@@ -84,7 +84,7 @@ input {
     font-size: 0;
     &:active {
         [class*="icon-"] {
-            color: var(FG-1);
+            color: var(--FG-1);
         }
     }
 }
